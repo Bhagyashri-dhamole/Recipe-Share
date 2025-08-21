@@ -1,0 +1,26 @@
+{
+  "name": "recipeshare-backend",
+  "version": "1.0.0",
+  "description": "Express + MongoDB backend for RecipeShare with JWT auth and recipes CRUD.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file=.env --watch src/server.js",
+    "start": "node --env-file=.env src/server.js",
+    "lint": "echo \"Add ESLint if needed\"",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.19.2",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.17.2",
+    "morgan": "^1.10.0"
+  }
+}
